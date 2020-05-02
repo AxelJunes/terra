@@ -6,6 +6,7 @@ import {
 } from 'relay-runtime'
 import fetch from 'node-fetch'
 
+// Network interface and cache
 const fetchQuery = async (
   operation,
   variables
