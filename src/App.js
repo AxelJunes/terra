@@ -1,11 +1,16 @@
-import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom'
+import React from 'react'
+import HomePage from './pages/home'
+import Layout from './components/layout'
 
-function App() {
+function App () {
   return (
-    <div>
-      Hello
-    </div>
-  );
+    <Layout>
+      <BrowserRouter>
+        <Route exact path='/' component={HomePage} />
+      </BrowserRouter>
+    </Layout>
+  )
 }
 
-export default App;
+export default App
