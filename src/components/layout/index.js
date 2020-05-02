@@ -1,10 +1,14 @@
-import { ThemeProvider } from '@chakra-ui/core'
+import { Box, ThemeProvider } from '@chakra-ui/core'
 import React from 'react'
 
 const Layout = ({ children }) => {
   return (
     <ThemeProvider>
-      {children}
+      <Box background='#d0d5db' height='100vh' width='100vw'>
+        <Box padding='1rem'>
+          {children}
+        </Box>
+      </Box>
     </ThemeProvider>
   )
 }
