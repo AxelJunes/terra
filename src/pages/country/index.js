@@ -1,4 +1,5 @@
 import { graphql, QueryRenderer } from 'react-relay'
+import { Text } from '@chakra-ui/core'
 import React from 'react'
 import environment from '../../environment'
 
@@ -26,7 +27,7 @@ const Country = ({ match: { params: { code } } }) => {
 
         const { country } = props
 
-        return <div>{country.name}</div>
+        return <Text>{country.name}</Text>
       }}
     />
   )
