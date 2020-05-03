@@ -6,12 +6,12 @@ import Layout from './components/layout'
 
 function App () {
   return (
-    <Layout>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Layout>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/country/:code' component={CountryPage} />
-      </BrowserRouter>
-    </Layout>
+      </Layout>
+    </BrowserRouter>
   )
 }
 
