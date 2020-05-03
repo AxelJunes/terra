@@ -9,7 +9,7 @@ function App () {
     <BrowserRouter>
       <Layout>
         <Route exact path='/' component={HomePage} />
-        <Route exact path='/country/:code' component={CountryPage} />
+        <Route exact path='/country/:code?' component={CountryPage} />
       </Layout>
     </BrowserRouter>
   )
